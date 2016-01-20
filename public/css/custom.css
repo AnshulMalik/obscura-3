@@ -1,0 +1,550 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Geo);
+@import url(https://fonts.googleapis.com/css?family=Exo:400,300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+.tagline {
+	font-family: 'Exo', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.svg {
+	margin-left: 17%;
+}
+.parallax-container {
+	line-height: 0;
+	height: auto;
+	min-height: 400px;
+}
+
+.parallax-container .white-text {
+	color: rgba(255, 255, 255, .9);
+}
+.brand-logo {
+	font-family: Montserrat!important;
+}
+.brand-logo img {
+	height: 40px;
+}
+.logo-image {
+	border-radius: 100%;
+	position: fixed;
+	margin-left: 19px;
+	margin-top: 12px;
+}
+.parallax img {
+	min-width: 100%;
+}
+nav {
+
+	background-color: rgba(38, 50, 56, 0.95);
+}
+nav ul a {
+	font-size: 1.3rem;
+}
+.nav-wrapper li a {
+	font-family: 'Exo', cursive;
+	font
+}
+
+.btn-big {
+	text-transform: uppercase;
+	text-align: center;
+	min-width: 10em;
+	font-weight: 700;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	border-radius: 2.5em;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	font-size: 1.2em;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 2.5em;
+	box-shadow: none;
+	color: #fff !important;
+}
+
+.btn-alt {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px #51BAA4;
+	color : #51BAA4 !important;
+	transition-property: all;
+	transition-duration: .2s;
+}
+.btn-alt:hover {
+	box-shadow: inset 0 0 0 2px #fff;
+	color : #fff !important;
+}
+
+.register {
+	background-color: rgba(244, 255, 255, 0.92);
+	border-radius: 4px;
+}
+.login {
+	background-color: rgba(244, 255, 255, 0.92);
+	border-radius: 4px;
+}
+.container-fluid.body {
+	margin-top: -64px;
+}
+.assignment-table td{
+	padding: 1px 5px;
+}
+.control-assignment {
+	top: -7px;
+}
+.collapsible-body table {
+	margin-left: 20px;
+}
+.status.ok {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: green;
+	display: inline-block;
+	margin-top: 16px;
+}
+.view-content-btn {
+	width: 50px;
+	font-size: .7em;
+	padding: 2px;
+}
+select {
+	max-height: 100px;
+	overflow: scroll;
+}
+.section {
+	width: 100%;
+}
+
+.valign-wrapper {
+	display: flex;
+	align-items: center;
+}
+.shadow {
+	box-shadow: 0 0 15px black;
+	background-color: white;
+}
+
+
+/*
+Login and signup transformations
+*/
+
+#userdial {
+	overflow: hidden;
+	width: 100%;
+}
+#formsDial {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: transform .5s ease;
+	-webkit-transition: transform .5s ease;
+	-moz-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+}
+#signupformDetails {
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	transition: transform .5s ease;
+	-webkit-transition: transform .5s ease;
+	-moz-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+}
+
+#loginformDetails {
+	position: absolute;
+	top: 60px;
+	left: 100%;
+	transition: transform .5s ease;
+	-webkit-transition: transform .5s ease;
+	-moz-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+}
+#userdialDefault {
+	transition: transform .5s ease;
+	-webkit-transition: transform .5s ease;
+	-moz-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+}
+
+
+
+#cursor {
+	width: 6px;
+	border-radius: 4px;
+	height: 64px;
+	background-color: rgba(255, 255, 255, .9);
+	position: absolute;
+}
+.grey-text {
+	color: rgba(1,1,1, .5);
+}
+
+
+
+.full {
+	height: 100%;
+	overflow: hidden;
+}
+.landing-header {
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+	text-shadow: 0px 0px 2px;
+
+}
+
+.overlay {
+	background-color: rgba(1,1,1,.5) !important;
+	border-radius: .2em;
+
+}
+
+.white {
+	background-color: #FFF;
+	color: #212121;
+}
+.assignment-bar {
+	display: inline;
+	float: right;
+}
+
+.dropdown-content {
+	max-height: 210px;
+}
+.assignment-bar-icon {
+	display: inline-block!important;
+}
+ul {
+	padding: 0px;
+	list-style-type: none;
+}
+ul.table-of-contents {
+	text-align: left;
+	margin-top: 0px;
+	padding-top: 48px;
+}
+.table-of-contents.fixed {
+  	position: fixed;
+}
+.table-of-contents li {
+  	padding: 2px 0;
+}
+.table-of-contents a {
+  	display: inline-block;
+  	font-weight: 300;
+  	color: #757575;
+  	padding-left: 20px;
+  	height: 1.5rem;
+  	line-height: 1.5rem;
+  	letter-spacing: .4;
+  	display: inline-block;
+}
+.table-of-contents a:hover {
+    color: #a8a8a8;
+    padding-left: 19px;
+    border-left: 1px solid #ea4a4f;
+}
+.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 2px solid #ea4a4f; }
+
+.fbBtn {
+	background-color: rgb(52, 87, 173);
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 2em;
+	box-shadow: none;
+	color: #fff !important;
+}
+
+
+.googleBtn {
+	background-color: rgb(220, 78, 65);
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 2em;
+	box-shadow: none;
+	margin-bottom: 5px;
+	color: #fff !important;
+}
+
+
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, .85);
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+	margin-top: 40px;
+}
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+.login-block input::-webkit-input-placeholder {
+    color:    #000;
+}
+.login-block input:-moz-placeholder {
+    color:    #000;
+}
+.login-block input::-moz-placeholder {
+    color:    #000;
+}
+.login-block input:-ms-input-placeholder {
+    color:    #000;
+}
+
+.login-block input#username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#firstname {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#firstname:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#lastname {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#lastname:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#confirm-password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#confirm-password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#phone {
+    background: #fff url('../images/iphone.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#phone:focus {
+    background: #fff url('../images/iphone.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
+.signup-block {
+	margin-top: 190px;
+	width: 690px;
+}
+
+.connect__icon {
+  vertical-align: middle;
+  float: left;
+  width: 60px;
+  text-align: center;
+  font-size: 22px;
+  height: inherit;
+}
+.fa {
+	line-height: 2em!important;
+}
+
+.connect__context {
+  vertical-align: middle;
+  text-align: center;
+}
+.connect.facebook {
+  background: #3b5998;
+  color: #FFF;
+}
+
+.connect.facebook a {
+  color: #FFF;
+}
+.connect.facebook .connect__icon {
+  background: #283d68;
+}
+.connect.googleplus {
+  background: #dd4b39;
+  color: #FFF;
+}
+.connect.googleplus a {
+  color: #FFF;
+}
+.connect.googleplus .connect__icon {
+  background: #b52f1f;
+}
+.logmod__form {
+  border-top: 1px solid #e5e5e5;
+}
+.logmod__alter {
+  display: block;
+  position: relative;
+  margin-top: 7px;
+}
+.logmod__alter::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.logmod__alter .connect:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.connect {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.connect::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.connect:focus, .connect:hover, .connect:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.big-icons {
+	padding: 40px 0 !important;
+	text-align: center;
+	width: 100%;
+	height: inherit;
+	border-radius: 100%;
+
+}
+
+.footer {
+	bottom: 0px;
+	width: 100%;
+	position: relative;
+	background-color: rgba(38, 50, 56, 0.95);
+}
+.footer .row {
+	margin-bottom: 0px!important;
+}
+.parallax {
+	overflow: hidden;
+}
+.footer p {
+	line-height: 0;	
+}
+.inline {
+	margin-top: 25px;
+	display: inline-block;
+}
+.footer-text {
+	color: rgba(255, 255, 255, 0.6);
+}
+.small-image {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-top: 11px;
+	cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+	.login {
+		max-width: 350px;
+	}
+	.signup-block .connect {
+		width: 47%;
+		display: inline-block;
+	}
+	.captcha {
+		margin-left: 11px!important;
+	}
+	.signup-btn {
+		width: 45% !important;
+		margin-top: 18px;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.signup-block {
+		margin-top: 190px;
+		width: 320px;
+	}
+}

@@ -1,0 +1,9 @@
+<?php if(Session::has('alerts')): ?>
+	<?php foreach(Session::get('alerts') as $alert): ?>
+		<div class="alert alert-<?php echo e($alert['type']); ?> alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<?php echo $alert['message']; ?>
+
+		</div>
+	<?php endforeach; ?>
+<?php endif; ?>

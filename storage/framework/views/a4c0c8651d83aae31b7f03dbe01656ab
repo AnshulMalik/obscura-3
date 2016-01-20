@@ -1,0 +1,15 @@
+<ol class="breadcrumb">
+    <li><a href="<?php echo e(config('forum.routing.root')); ?>"><?php echo e(trans('forum::base.index')); ?></a></li>
+    <?php if(isset($parentCategory) && $parentCategory): ?>
+        <li><a href="<?php echo $parentCategory->route; ?>"><?php echo $parentCategory->title; ?></a></li>
+    <?php endif; ?>
+    <?php if(isset($category) && $category): ?>
+        <li><a href="<?php echo $category->route; ?>"><?php echo $category->title; ?></a></li>
+    <?php endif; ?>
+    <?php if(isset($thread) && $thread): ?>
+        <li><a href="<?php echo $thread->route; ?>"><?php echo $thread->title; ?></a></li>
+    <?php endif; ?>
+    <?php if(isset($other) && $other): ?>
+        <li><?php echo $other; ?></li>
+    <?php endif; ?>
+</ol>
