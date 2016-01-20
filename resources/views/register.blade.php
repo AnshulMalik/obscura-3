@@ -71,24 +71,24 @@
           @endif
                     <form method="post" action="/postSignup">
                     <div class="col m6 s12">
-                      <input type="text" value="" placeholder="First Name" id="firstname" name="first_name" value="{{Input::old('first_name')}}"  required/>
+                      <input type="text" placeholder="First Name" id="firstname" name="first_name" value="{{Input::old('first_name')}}"  required/>
                     </div>
                     <div class="col s12 m6">
-                      <input type="text" value="" placeholder="Last Name" id="lastname" name="last_name" value="{{Input::old('last_name')}}" required/>
+                      <input type="text" placeholder="Last Name" id="lastname" name="last_name" value="{{Input::old('last_name')}}" required/>
 
                     </div>
 
                     <div class="col m6 s12">
-                      <input type="text" value="" placeholder="Email" id="username" name="email" value="{{Input::old('email')}}"  required />
+                      <input type="text" placeholder="Email" id="username" name="email" value="{{Input::old('email')}}"  required />
                     </div>
                     <div class="col s12 m6">
-                      <input type="text" value="" placeholder="Phone" id="phone" name="mobno" value="{{Input::old('mobno')}}" required/>
+                      <input type="text"  placeholder="Phone" id="phone" name="mobno" value="{{Input::old('mobno')}}" required/>
                     </div>
                     <div class="col m6 s12">
-                      <input type="password" value="" placeholder="Password" id="password" name="password" required/>
+                      <input type="password"  placeholder="Password" id="password" name="password" required/>
                     </div>
                     <div class="col m6 s12">
-                    <input type="password" value="" placeholder="Confirm Password" id="confirm-password" name="password_confirmation" required/>
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" name="password_confirmation" required/>
                   </div>
                     <div class="row">
                       <div class="col m6 s12 captcha">

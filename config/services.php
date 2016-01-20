@@ -38,13 +38,13 @@ return [
     'facebook' => [
     'client_id' => '766590860043615',
     'client_secret' => '06a843063d1f417104f85075a746cb77',
-    'redirect' => 'http://localhost:8000/account/facebook',
+    'redirect' => 'http://www.obscuraconflu.com/account/facebook',
 ],
 
     'google' => [
     'client_id' => '914664825675-h6mdroul58fti849ukog0726ht2qd1a1.apps.googleusercontent.com',
     'client_secret' => 'y1TjphhY3clhnhBrZto8uftb',
-    'redirect' => 'http://localhost:8000/account/google',
+    'redirect' => 'http://www.obscuraconflu.com/account/google',
 ],
 
 ];
