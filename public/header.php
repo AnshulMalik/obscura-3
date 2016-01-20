@@ -1,6 +1,6 @@
 <head>
 		<title>Obscura</title>
-		<link href="css/ticker-style.css" rel="stylesheet" type="text/css" />
+		<link href="/css/ticker-style.css" rel="stylesheet" type="text/css" />
 		
 		
 		

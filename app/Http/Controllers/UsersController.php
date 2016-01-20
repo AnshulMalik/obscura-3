@@ -35,7 +35,7 @@ class UsersController extends Controller {
 	*/
     public function check()
     {
-        return view('fbgoogle');
+        return view('dashboard');
     }
     public function dashboard()
     {
@@ -330,6 +330,7 @@ public function obscura()
 				{
 					$tempData = Session::get('fb');
 					$newUserData['uid'] = $tempData['uid'];
+                    $newUserData['password'] = Hash::make(Input::get('password'));
 					$newUserData['signup_type'] = $tempData['signup_type'];
 					if(Users::create($newUserData))
 					{

@@ -10,12 +10,12 @@
 			</div>
  	    </div>
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="js/jquery.ticker.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/form.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" src="js/site.js"></script>
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="/js/materialize.min.js"></script>
+		<script src="/js/jquery.ticker.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/js/form.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<script type="text/javascript" src="/js/site.js"></script>
 
 		<script type="text/javascript">
 			

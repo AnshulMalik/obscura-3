@@ -25,7 +25,7 @@ use App\Users;
 
                   <div class="col m6 offset-m3 s8 offset-s2">
                       <div class="input-field col s8 offset-s2">
-                        <button class="btn-big btn-alt waves-effect waves-teal signupBtn">Get Started</h3>
+                        <a class="btn-big btn-alt waves-effect waves-teal signupBtn" href="/login">Get Started</a>
                         
                       </div>
                   </div>
@@ -81,7 +81,10 @@ use App\Users;
         <div class="section">
           <div class="container">
             <div class="row center">
-              <h5 class="header col s12 light white-text">A place where most talented minds of the world compete.</h5>
+              <h4 class="header col s12 white-text">About us</h4>
+              <h6 class="header col s12 light white-text about-text">One of the most happening and fun crypt hunts of this year is ObscurA 3.0. ObscurA is derived from the word "Obscure" which means "keep from being seen; conceal", and that is what we do. We allow you to use any means at your disposal (that includes google) to crack the questions we pose to you, with special prizes for cracking some specific questions, BUT there is a catch. Our questions are not straightforward, most of them are based on wordplay, cyphers and lateral thinking (among other things).  
+So put on your thinking caps, flex your fingers and get ready for a race to decide who will crack the last question first and will be the winner of Obscura3.0.
+Happy hunting!!.</h6>
             </div>
           </div>
         </div>
@@ -97,18 +100,16 @@ use App\Users;
               <h5>Rules</h5>
 
               <div class="">
-                <ul>
-                <li>All the answers are in lowercase. No  UPPERCASE shall be TOLERATED!</li>
-                      <li>Nothing is obvious at Obscura. So open the flaps  and think out of the box.</li>
-                      <li>But we've sprinkled sufficient clues every here  and there. So keep a close check on them.(PSST.. Source code might help, but this is just the beginning!)
-                     </li><li>
-                     </li><li>We can help you, if you are polite enough to ask  for it. Don't go around pestering us for hints.
-                     </li><li>Googlebaba knows it all.
-                     </li><li>We are cruel people hints can be ANYWHERE.
-                     </li><li>Begin to love surfing. Oh, did we forget to tell  we love Wikipedia and tineye.com a lot?
-                     </li><li>Finding the answer is not the final solution.
-                      </li>
-                </ul>
+                <ol>
+                  <li>All the answers are in lowercase. No  UPPERCASE shall be TOLERATED!</li>
+                  <li>Nothing is obvious at Obscura. So open the flaps  and think out of the box.</li>
+                  <li>But we've sprinkled sufficient clues every here  and there. So keep a close check on them.(PSST.. Source code might help, but this is just the beginning!)</li>
+                  <li>We can help you, if you are polite enough to ask  for it. Don't go around pestering us for hints.</li>
+                  <li>Googlebaba knows it all.</li>
+                  <li>We are cruel people hints can be ANYWHERE.</li>
+                  <li>Begin to love surfing. Oh, did we forget to tell  we love Wikipedia and tineye.com a lot?</li>
+                  <li>Finding the answer is not the final solution.</li>
+                </ol>
 
               </div>
             </div>

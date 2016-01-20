@@ -6,7 +6,19 @@
 	font-family: 'Exo', sans-serif;
 	font-weight: 300;
 }
+#logout {
+	top:64px !important;
+}
+ol li {
+	text-align: left !important;
+}
+.about-text {
+	line-height: 1.5;
+}
 
+.dropdown-content {
+	background-color: rgba(38, 50, 56, 0.95);
+}
 body {
 	overflow-x: hidden;
 }

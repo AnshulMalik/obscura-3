@@ -1,102 +1,159 @@
-<?php
-use App\Users;
-?>
-<!DOCTYPE html>
 <html>
-<head>
-<title>Obscura 2.0</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/header.css">
+  <?php
+    include_once('header.php');
+    use App\Users;
+  ?>
 
-<link rel="stylesheet" href="css/footer.css">
+  <body id="home">
 
-<link rel="stylesheet" href="css/loginRegister.css">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,800,900,300,200|Londrina+Outline|Flamenco:400,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Cuprum:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-  <body>
-  
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"><img src="/images/logo.jpg" class="logo-image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obscura</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a class="waves-effect waves-light" href="#home">Home</a></li>
+            <li><a class="waves-effect waves-light" href="#">Forum</a></li>
+            <li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
+            <li><a class="dropdown-button" href="#" data-activates="logout">{{Users::getFirstName(Auth::id())}}<i class="material-icons right">arrow_drop_down</i></a></li>
 
- <section class="container-fluid" id="inner-block">
-      <div class="row" id="short-head">
-        <a class="btn btn-default pull-left" id="login-link" href="/">
-          Obscura
-        </a>
-		<div class="dropdown pull-right" style="margin-right:10px;">
-			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-				{{Users::getFirstName(Auth::id())}}
-				<span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
 
-				<li role="presentation" class="text-center"><a class="btn btn-default pull-right" href="/logout">Logout</a></li>
 
-			</ul>
-		</div>
-      <!--  <div class="dropdown pull-right" style="margin-right:10px">
-			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-				Level 0
-				<span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;;color:white; width:100px; margin-left:15px">
 
-				<li role="presentation" class="text-center">Level 0</li>
-				<li role="presentation" class="text-center">Level 1</li>
-				<li role="presentation" class="text-center">Level 2</li>
-				<li role="presentation" class="text-center">Level 3</li>
+              </ul>
 
-			</ul>
-		</div>-->
-		<a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
-          Forum
-        </a>
-        <br>
-      </div>
-      </div>    
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" style="background:white; opacity:0.8; height:250px; margin-top:60px">
-				<div class="row">
-					<div class="col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-md-6">
-						<h1 style="font-size:40px">Welcome {{Users::getFirstName(Auth::id())}}</h1><br><br>
-						<h2>The Game will Start from 6th feb</h2>
-					</div>
-				</div>
+               <ul id='logout' class='dropdown-content'>
+              <li><a href="/logout">Logout</a></li>
+          </ul>
+              <ul class="side-nav" id="mobile-demo">
+            <li><a href="#home">Home</a></li>
+            <li><a class="waves-effect waves-light" href="#">Forum</a></li>
+            <li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
+            <li><a class="waves-effect waves-light" href="#!">Logout</a></li>
+
+              </ul>
             </div>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid body">
+      <div class="parallax-container full valign-wrapper">
+        <div class="section">
+          <div class="container overlay">
+            <div class="row center">
+              <h1 class="header landing-header col s12 light"> 
+                <div class="svg">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 2300 300" enable-background="new 0 0 600 500" xml:space="preserve">
+                  <g
+                       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:125%;font-family:'Poiret One';-inkscape-font-specification:'Poiret One';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                       id="text3336">
+                      <path
+                         d="m 100.96279,158.98789 -59.219998,-137.34 6.66,0 53.459998,123.66 25.02,-58.5 -27.9,-65.16 6.48,0 25.02,59.22 25.74,-59.22 5.04,0 -28.08,64.98 25.56,59.22 54.54,-124.2 4.86,0 -59.94,137.34 -28.62,-65.88 -28.62,65.88 z"
+                         style=""/>
+                      <path
+                         d="m 282.5131,158.80789 -1.62,0 q -17.1,0 -29.88,-12.78 -12.6,-12.96 -12.6,-30.06 0,-17.1 12.6,-29.52 12.6,-12.6 31.14,-12.6 18.54,0 31.86,14.76 l -56.52,55.8 q 11.7,9.36 22.5,9.36 10.8,0 19.26,-4.86 8.64,-5.04 14.22,-13.32 l 0,9.18 q -12.78,14.04 -30.96,14.04 z m -1.98,-79.92 q -14.22,0 -25.38,11.16 -10.98,10.98 -10.98,25.38 0,14.4 9.54,25.2 l 52.38,-52.02 q -11.16,-9.72 -25.56,-9.72 z"
+                         style=""
+                         id="path3338" />
+                      <path
+                         d="m 369.73842,153.22789 0,5.04 q -12.78,0 -21.78,-8.46 -9,-8.64 -9,-21.96 l 0,-106.2 5.76,0 0,106.2 q 0,10.98 7.2,18.18 7.38,7.2 17.82,7.2 z"
+                         style=""
+                         id="path3340" />
+                      <path
+                         d="m 416.51873,158.98789 -1.62,0 q -17.28,0 -29.7,-12.78 -12.42,-12.78 -12.42,-29.88 0,-17.28 12.6,-29.7 12.6,-12.6 30.96,-12.6 18.36,0 31.32,13.86 l 0,9.18 q -5.58,-8.28 -14.22,-13.14 -8.46,-4.86 -17.82,-4.86 -14.94,0 -26.1,11.16 -10.98,10.98 -10.98,26.28 0,15.3 10.98,26.46 11.16,10.98 26.1,10.98 9.36,0 17.82,-4.86 8.64,-4.86 14.22,-13.32 l 0,9.36 q -12.6,13.86 -31.14,13.86 z"
+                         style=""
+                         id="path3342" />
+                      <path
+                         d="m 500.67998,158.62789 q -17.28,0 -29.7,-12.78 -12.42,-12.96 -12.42,-30.06 0,-17.1 12.6,-29.52 12.6,-12.6 30.24,-12.6 17.82,0 30.24,12.6 12.6,12.42 12.6,29.7 0,17.1 -12.24,29.88 -12.24,12.78 -29.7,12.78 l -1.62,0 z m 37.8,-42.3 q 0,-15.3 -10.98,-26.46 -10.8,-11.16 -25.92,-11.16 -15.12,0 -26.28,11.34 -10.98,11.16 -10.98,26.28 0,15.12 10.98,26.28 11.16,10.98 26.28,10.98 15.3,0 26.1,-10.98 10.8,-11.16 10.8,-26.28 z"
+                         style=""
+                         id="path3344" />
+                      <path
+                         d="m 617.65748,95.74789 q 2.7,-8.64 10.26,-13.86 7.74,-5.22 18.72,-5.22 10.98,0 19.26,7.92 8.28,7.92 8.28,21.42 l 0,53.64 -5.76,0 0,-53.64 q 0,-10.44 -6.84,-17.28 -6.84,-7.02 -16.56,-7.02 -9.54,0 -17.1,7.2 -7.38,7.2 -7.38,16.74 l 0,54 -5.76,0 0,-54 q 0,-9.72 -6.84,-16.74 -6.84,-7.2 -16.56,-7.2 -9.72,0 -16.92,7.2 -7.2,7.2 -7.2,16.74 l 0,54 -5.76,0 0,-81 5.76,0 0,11.34 q 3.6,-5.4 10.62,-9.36 7.2,-3.96 14.76,-3.96 7.74,0 14.76,5.4 7.02,5.22 10.26,13.68 z"
+                         style=""
+                         id="path3346" />
+                      <path
+                         d="m 736.29435,158.80789 -1.62,0 q -17.1,0 -29.88,-12.78 -12.6,-12.96 -12.6,-30.06 0,-17.1 12.6,-29.52 12.6,-12.6 31.14,-12.6 18.54,0 31.86,14.76 l -56.52,55.8 q 11.7,9.36 22.5,9.36 10.8,0 19.26,-4.86 8.64,-5.04 14.22,-13.32 l 0,9.18 q -12.78,14.04 -30.96,14.04 z m -1.98,-79.92 q -14.22,0 -25.38,11.16 -10.98,10.98 -10.98,25.38 0,14.4 9.54,25.2 l 52.38,-52.02 q -11.16,-9.72 -25.56,-9.72 z"
+                         style=""
+                         id="path3348" />
+                      <path
+                         d="m 876.64935,152.68789 0,5.04 q -12.78,0 -21.78,-8.46 -9,-8.64 -9,-21.96 l 0,-84.24 5.76,0 0,32.76 24.84,0 0,5.04 -24.84,0 0,46.44 q 0,10.98 7.2,18.18 7.38,7.2 17.82,7.2 z"
+                         style=""
+                         id="path3350" />
+                      <path
+                         d="m 928.53154,158.62789 q -17.28,0 -29.7,-12.78 -12.42,-12.96 -12.42,-30.06 0,-17.1 12.6,-29.52 12.6,-12.6 30.24,-12.6 17.82,0 30.24,12.6 12.6,12.42 12.6,29.7 0,17.1 -12.24,29.88 -12.24,12.78 -29.7,12.78 l -1.62,0 z m 37.8,-42.3 q 0,-15.3 -10.98,-26.46 -10.8,-11.16 -25.92,-11.16 -15.12,0 -26.28,11.34 -10.98,11.16 -10.98,26.28 0,15.12 10.98,26.28 11.16,10.98 26.28,10.98 15.3,0 26.1,-10.98 10.8,-11.16 10.8,-26.28 z"
+                         style=""
+                         id="path3352" />
+                      <path
+                         d="m 1118.3387,158.98789 q -27.9,0 -48.42,-21.06 -20.34,-21.06 -20.34,-49.14 0,-28.26 20.7,-48.78 20.7,-20.7 49.68,-20.7 28.98,0 49.5,20.52 20.52,20.52 20.52,48.96 0,28.26 -20.34,49.32 -20.34,20.88 -48.6,20.88 l -2.7,0 z m 65.7,-69.84 q 0,-26.64 -18.9,-45.54 -18.72,-19.08 -45.36,-19.08 -26.46,0 -45.36,19.08 -18.9,18.9 -18.9,45.54 0,26.46 18.9,45.54 18.9,19.08 45.36,19.08 26.46,0 45.36,-19.08 18.9,-19.08 18.9,-45.54 z"
+                         style=""
+                         id="path3354" />
+                      <path
+                         d="m 1208.724,156.64789 0,-135 5.76,0 0,73.8 q 4.86,-9.9 15.12,-15.84 10.44,-5.94 21.6,-5.94 17.82,0 30.24,12.6 12.6,12.42 12.6,29.88 0,17.46 -12.6,30.06 -12.42,12.42 -30.24,12.42 -10.8,0 -21.06,-5.76 -10.26,-5.94 -15.66,-15.84 l 0,19.62 -5.76,0 z m 5.4,-40.32 q 0,15.12 10.98,26.28 11.16,10.98 26.28,10.98 15.3,0 26.1,-10.98 10.8,-11.16 10.8,-26.28 0,-15.3 -10.98,-26.46 -10.8,-11.16 -25.92,-11.16 -15.12,0 -26.28,11.34 -10.98,11.16 -10.98,26.28 z"
+                         style=""
+                         id="path3356" />
+                      <path
+                         d="m 1328.6687,78.52789 q -4.68,0 -8.28,3.06 -3.6,3.06 -3.6,7.56 0,4.5 3.96,8.28 4.14,3.78 9.72,7.02 5.76,3.06 11.52,6.66 5.76,3.6 9.72,9.18 4.14,5.58 4.14,12.78 0,10.62 -8.1,18.18 -7.92,7.38 -19.26,7.38 -7.2,0 -13.5,-3.06 -6.12,-3.24 -9,-8.46 l 0,-8.64 q 6.84,15.12 21.96,15.12 9.36,0 15.66,-5.76 6.48,-5.76 6.48,-12.78 0,-7.2 -4.14,-12.06 -3.96,-4.86 -9.72,-8.28 -5.76,-3.42 -11.52,-6.66 -5.58,-3.42 -9.72,-8.1 -3.96,-4.86 -3.96,-11.16 0,-6.48 5.04,-10.8 5.22,-4.5 13.32,-4.5 8.1,0 13.86,6.3 l 0,7.38 q -5.76,-8.64 -14.58,-8.64 z"
+                         style=""
+                         id="path3358" />
+                      <path
+                         d="m 1412.1437,158.98789 -1.62,0 q -17.28,0 -29.7,-12.78 -12.42,-12.78 -12.42,-29.88 0,-17.28 12.6,-29.7 12.6,-12.6 30.96,-12.6 18.36,0 31.32,13.86 l 0,9.18 q -5.58,-8.28 -14.22,-13.14 -8.46,-4.86 -17.82,-4.86 -14.94,0 -26.1,11.16 -10.98,10.98 -10.98,26.28 0,15.3 10.98,26.46 11.16,10.98 26.1,10.98 9.36,0 17.82,-4.86 8.64,-4.86 14.22,-13.32 l 0,9.36 q -12.6,13.86 -31.14,13.86 z"
+                         style=""
+                         id="path3360" />
+                      <path
+                         d="m 1523.845,75.64789 5.76,0 0,81 -5.76,0 0,-16.38 q -9.18,18.36 -31.32,18.36 -15.12,0 -25.38,-10.44 -10.26,-10.44 -10.26,-25.38 l 0,-47.16 5.76,0 0,47.16 q 0,12.42 8.64,21.6 8.82,9.18 21.24,9.18 12.42,0 21.78,-9.18 9.54,-9.18 9.54,-21.6 l 0,-47.16 z"
+                         style=""
+                         id="path3362" />
+                      <path
+                         d="m 1596.7281,87.62789 q -7.92,-7.92 -17.46,-7.92 -9.54,0 -16.92,7.2 -7.2,7.2 -7.2,16.74 l 0,54 -5.76,0 0,-81 5.76,0 0,12.06 q 3.24,-6.12 10.08,-10.08 6.84,-3.96 15.3,-3.96 8.46,0 16.2,5.76 l 0,7.2 z"
+                         style=""
+                         id="path3364" />
+                      <path
+                         d="m 1692.7862,75.64789 0,81 -5.76,0 0,-20.16 q -5.04,10.26 -15.12,16.2 -10.08,5.94 -21.6,5.94 -17.64,0 -30.24,-12.42 -12.6,-12.6 -12.6,-30.06 0,-17.46 12.6,-29.88 12.6,-12.6 30.24,-12.6 11.52,0 21.96,6.12 10.62,6.12 14.76,16.2 l 0,-20.34 5.76,0 z m -79.56,40.68 q 0,15.12 10.98,26.28 11.16,10.98 26.28,10.98 15.3,0 26.1,-10.98 10.8,-11.16 10.8,-26.28 0,-15.3 -10.98,-26.46 -10.8,-11.16 -25.92,-11.16 -15.12,0 -26.28,11.34 -10.98,11.16 -10.98,26.28 z"
+                         style=""
+                         id="path3366" />
+                    </g>
+                </svg>
+                </div>
+
+
+
+
+               </h1>
+              <h5 class="white-text tagline">The game will begin soon..</h5>
+              <div class="row">
+
+
+
+                  <div class="col m6 offset-m3 s8 offset-s2">
+                      <div class="input-field col s8 offset-s2">
+                        <button class="btn-big btn-alt waves-effect waves-teal signupBtn">Start</h3>
+                      </div>
+                  </div>
+
+              </div>
+               
+            </div>
+
           </div>
-		  <br />
-		  <br />
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-					<form method="post" action="/start">
-						<button type="submit" class="btn btn-primary">Lets Go </button>
-						</form>
-					</div>
-				</div>
-		  
-		
-  </section> 
-   <div id="bottomnav" class="row"  >
-      <div class="col-md-2 col-sm-2 col-xs-4">
-        
-        <a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>
-        <a href="http://www.youtube.com/photonitk" target="_blank" style="float:left"><img src="youtube_active.png" alt="youtube" style="height:30px"></a>
-         <p class="text-center">NIT Kurukshetra</p>
+           <div class="ticker-div">
+                <ul id="js-news" class="js-hidden">
+                  <li class="news-item">{!! Users::getTicker(); !!}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="parallax">
+          <img src="images/banner.jpg" style="display: block; transform: translate3d(-50%, 316px, 0px);"></img>
+        </div>
       </div>
-      <div class="col-md-7 col-sm-7 col-xs-5" >
-        <marquee><p class="text-primary" style="color:black">{{Ticker::getTicker()}}</p></marquee>  
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-3">
-        <div style="float:left"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/Conflu&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=40" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:20px" allowTransparency="true"></iframe></div>
-      
-      </div>
-      </div>
+
+
+    </div>
+
+    <?php include_once('footer.php');?>
+    <script src='js/TweenMax.min.js'></script>
+    <script src='js/DrawSVGPlugin.js?r=6'></script>
+    <script src="js/index.js"></script>
 
   </body>
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
-
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </html>

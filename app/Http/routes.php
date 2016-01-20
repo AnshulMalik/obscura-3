@@ -20,13 +20,6 @@ Route::get('/google_login','UsersController@google_redirect');
 Route::get('/account/google','UsersController@google');
 Route::get('/check','UsersController@check');
 
-
-/*Route::get('/googleAuth','UsersController@googleAuth');
-Route::get('/google','UsersController@loginDoneGoogle');
-Route::get('/fb','UsersController@loginDone');
-Route::get('/facebook','UsersController@loginWithFacebook');
-
-*/
 	
 Route::get('/obscura','UsersController@obscura');
 
