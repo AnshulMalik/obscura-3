@@ -559,4 +559,7 @@ ul.table-of-contents {
 		margin-top: 190px;
 		width: 320px;
 	}
+	.ticker-div {
+		margin-top: -80px;
+	}
 }
