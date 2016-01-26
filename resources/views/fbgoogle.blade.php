@@ -53,7 +53,7 @@
                     <input type="password" placeholder="Confirm Password" id="confirm-password" name="password_confirmation" required/>
                   </div>
                     <div class="col m12 s12">
-                    <input type="text" placeholder="College Name" id="confirm-password" name="college" value="@if(isset($newUserData)){{$newUserData['college']}}@else{{Input::old('college')}}@endif"required/>
+                    <input type="text" placeholder="College Name" id="confirm-password" name="college" value="{{Input::old('college')}}"required/>
                   </div>
 
                     <button type="submit">Signup</button>
