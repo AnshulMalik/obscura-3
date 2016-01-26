@@ -12,6 +12,10 @@ class Users extends Model
 	public static $rulesSignup=array(
 		'email'=>'required|unique:users,email',
 		'password'=>'required|confirmed|min:6',
+		'college' => 'required',
+		'first_name' => 'required',
+		'last_name'  => 'required',
+		'mobno' => 'required|min:10',
 		'g-recaptcha-response' => 'required|captcha',
 	);
 	public static $rules_login=[

@@ -19,10 +19,9 @@ class TaskController extends Controller
 		/*$user = User::getUser();
 		echo $user[0]->first_name;
 		return;
-		$array = ['foo' => 'bar'];
+		
 		echo "Welcome Utkarsh";*/
-		dd(Users::getUser());
-		return;
+		$array = ['foo' => 'bar'];
 		Mail::send('emails.welcome',$array, function ($message) {
     		$message->from('info@obscuraconflu.com', 'Laravel');
 

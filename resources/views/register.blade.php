@@ -90,6 +90,9 @@
                     <div class="col m6 s12">
                     <input type="password" placeholder="Confirm Password" id="confirm-password" name="password_confirmation" required/>
                   </div>
+                  <div class="col m12 s12">
+                    <input type="text" placeholder="College Name" id="confirm-password" name="college" value="{{Input::old('college')}}" required/>
+                  </div>
                     <div class="row">
                       <div class="col m6 s12 captcha">
                           {!! app('captcha')->display(); !!}               
