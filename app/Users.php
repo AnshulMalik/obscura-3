@@ -24,7 +24,7 @@ class Users extends Model
 	];
 
 	public static $rulesfbgoole=array(
-		'mobno' => 'required|min10',
+		'mobno' => 'required|min:10',
 		'college' => 'required',
 		'email'=>'required|unique:users,email',
 		'password'=>'required|confirmed|min:6',
