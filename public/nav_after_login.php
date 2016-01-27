@@ -11,7 +11,7 @@ use App\Users;
 		          		<li><a class="waves-effect waves-light" href="/dashboard">Home</a></li>
 						<li><a class="waves-effect waves-light" href="https://www.facebook.com/obscuranitkkr" target="_blank">Forum</a></li>
 						<li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
-						<li><a class="dropdown-button" href="#!" data-activates="logout">{{Users::getFirstName(Auth::id())}}<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="logout"><?php echo Users::getFirstName(Auth::id()); ?><i class="material-icons right">arrow_drop_down</i></a></li>
 
 
 

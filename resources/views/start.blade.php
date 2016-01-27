@@ -6,7 +6,7 @@
 
   <body id="home">
 
-   <?php include_once('nav_after_login.php'); ?>
+    <?php include_once('nav_after_login.php'); ?>
 
 
     <div class="container-fluid body">
