@@ -19,13 +19,13 @@ use App\Users;
 		        	</ul>
 
 		        	 <ul id='logout' class='dropdown-content'>
-					  	<li><a href="#!">Logout</a></li>
+					  	<li><a href="/logout">Logout</a></li>
 					</ul>
 		        	<ul class="side-nav" id="mobile-demo">
-						<li><a href="#home">Home</a></li>
+						<li><a href="/">Home</a></li>
 						<li><a href="https://www.facebook.com/obscuranitkkr" target="_blank">Forum</a></li>
 						<li><a href="#">Leaderboard</a></li>
-						<li><a href="#!">Logout</a></li>
+						<li><a href="/logout">Logout</a></li>
 
 			      	</ul>
 		      	</div>
