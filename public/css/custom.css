@@ -537,6 +537,27 @@ ul.table-of-contents {
 	margin-top: 11px;
 	cursor: pointer;
 }
+
+
+.levels-container {
+	padding-top: 90px;
+}
+.level-number {
+	padding-top: 1px;
+}
+.level-content {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.level-image {
+	width: inherit;
+}
+.level-submit {
+	margin-top: 25px;
+}
+.answer-box {
+	color: #fff;
+}
 @media screen and (min-width: 768px) {
 	.login {
 		max-width: 350px;

@@ -35,7 +35,7 @@ class UsersController extends Controller {
 	*/
     public function check()
     {
-        return view('dashboard');
+        return view('level25');
     }
     public function dashboard()
     {
