@@ -36,7 +36,7 @@
                     <input type="text" placeholder="Update College Name" id="confirm-password" name="college" value="{{Input::old('college')}}"required/>
                   </div>
 
-                    <button type="submit">Signup</button>
+                    <button type="submit">Update</button>
                   </div>
                   <div class="row"></div>
                 </div>
