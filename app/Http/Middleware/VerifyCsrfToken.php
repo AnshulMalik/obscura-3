@@ -14,7 +14,9 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
     		'/postSignup',
     		'/postfbgoogle',
-    		'/postLogin'
+    		'/postLogin',
+            '/checkAnswer',
+            '/updateCollege',
         //
     ];
 }

@@ -15,7 +15,7 @@
                   <li><a class="waves-effect waves-light" href="#home">Home</a></li>
             <li><a class="waves-effect waves-light" href="#">Forum</a></li>
             <li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
-            <li><a class="dropdown-button" href="#" data-activates="logout"><?php echo e(Users::getFirstName(Auth::id())); ?><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#" data-activates="logout">{{Users::getFirstName(Auth::id())}}<i class="material-icons right">arrow_drop_down</i></a></li>
 
 
 
@@ -42,10 +42,29 @@
         <div class="section">
           <div class="container">
             <div class="row center">
-              <div class="col s12 level-number white-text left-align offset-s1"><input type="text" class="special-level-input-box" value="Level 25" /></div>
+              <div class="col s12 level-number white-text left-align offset-s1"><h5>Level 25</h5></div>
               <div class="level-content col s12">
                 <div class="level-image-container">
-                  <img class="level-image" src="http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg" />
+                  <script>
+                    var word = new Array(); //words stored in array
+                    word[0] = "fox";
+                    word[2] = "ox";
+                    word[4] = "bear";
+                    word[6] = "bird";
+                    word[9] = "mouse";
+                    word[8] = "wolf";
+                    word[7] = "toad";
+                    word[5] = "whale";
+                    word[3] = "bee";
+                    word[1] = "tiger";
+                    function show() {
+                      var i = Math.floor((Math.random()*10));
+                      document.getElementById('display').innerHTML = word[i];
+                    }
+                  </script>
+                  <p class="white-text" id="display"></p>
+                  <input type="button" class="btn btn-default green" onclick="show()" value="Generate!" />
+                  
                 </div>
               </div> 
 
@@ -78,3 +97,4 @@
 
   </body>
 </html>
+

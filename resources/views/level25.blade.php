@@ -42,17 +42,17 @@
         <div class="section">
           <div class="container">
             <div class="row center">
-              <div class="col s12 level-number white-text left-align overlay"><h5>Level 25</h5></div>
+              <div class="col s12 level-number white-text left-align offset-s1"><h5>Level 25</h5></div>
               <div class="level-content col s12">
                 <div class="level-image-container">
-                  <img class="level-image" src="http://ichef.bbci.co.uk/news/660/cpsprodpb/17A21/production/_85310869_85310700.jpg" />
+                  <img class="level-image" src="http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg" />
                 </div>
               </div> 
 
               <form>
                 <div class="row">
 
-                  <div class="col s8 offset-s1 input-field">
+                  <div class="col s6 offset-s2 input-field">
                     <input type="text" class="validate answer-box" id="answer" placeholder="Answer">
                   </div>
                   <div class="col s3">
@@ -78,3 +78,4 @@
 
   </body>
 </html>
+

@@ -33,13 +33,13 @@
                 <th>Level</th>
               </tr>
               <?php $i=0;?>
-            @foreach($lead as $user)
+            <?php foreach($lead as $user): ?>
             <tr>
-              <td>{{$i++}}</td>
-              <td style="margin-left:20%">{{$user->first_name}}{{" "}}{{$user->last_name}}</td>
-              <td>{{$user->level}}</td>
+              <td><?php echo e($i++); ?></td>
+              <td style="margin-left:20%"><?php echo e($user->first_name); ?><?php echo e(" "); ?><?php echo e($user->last_name); ?></td>
+              <td><?php echo e($user->level); ?></td>
             </tr>
-            @endforeach
+            <?php endforeach; ?>
             </font>
             </table>
 

@@ -10,7 +10,9 @@ use Auth;
 use Mail;
 use Socialite;
 use App\Users;
+use App\Levels;
 use App\Ticker;
+use App\Answer;
 use Input;
 use Redirect;
 use Hash;
@@ -35,7 +37,25 @@ class UsersController extends Controller {
 	*/
     public function check()
     {
-        return view('level25');
+        return view('college');
+    }
+    public function college()
+    {
+        return view('college');
+    }
+    public function updateCollege()
+    {
+        $college = Input::get('college');
+        $userId = Auth::id();
+        $updateStatus = Users::updateCollege($college,$userId);
+        if($updateStatus)
+        {
+            return Redirect::to('/dashboard');
+        }
+        else
+        {
+            print_r("failed");
+        }
     }
     public function dashboard()
     {
@@ -70,8 +90,18 @@ class UsersController extends Controller {
                 Auth::loginUsingId($userId);
                 $firstname = Users::getFirstName($userId);
                 Session::put('first_name',$firstname);
-                $data = "Welcome ";
-                return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+                $checkCollegeName = Users::getCollege($userId);
+                if($checkCollegeName)
+                {
+                    $data = "Welcome ";
+                    return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+                    
+                }
+                else
+                {
+                    return Redirect::to('/college');
+                }
+                
             }
             else{
             $newUserData['first_name'] = $user['first_name'];
@@ -105,8 +135,17 @@ class UsersController extends Controller {
                 Auth::loginUsingId($userId);
                 $firstname = Users::getFirstName($userId);
                 Session::put('first_name',$firstname);
-                $data = "Welcome ";
-                return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+                $checkCollegeName = Users::getCollege(Auth::id());
+                if($checkCollegeName)
+                {
+                    $data = "Welcome ";
+                    return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+                    
+                }
+                else
+                {
+                    return Redirect::to('/college');
+                }
             }
             else{
             if($user->user['name']['givenName'])
@@ -265,7 +304,7 @@ public function loginDoneGoogle()
         
   
 
-    }
+}
 
 
 public function obscura()
@@ -376,8 +415,17 @@ public function obscura()
 				//$data=$this->users->get(Input::get('email'));
 				$firstname = Users::getFirstName(Auth::id());
 				Session::put('first_name',$firstname);
-				$data = "Welcome ";
-        		return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+				$checkCollegeName = Users::getCollege(Auth::id());
+                if($checkCollegeName)
+                {
+                    $data = "Welcome ";
+                    return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
+                    
+                }
+                else
+                {
+                    return Redirect::to('/college');
+                }
 			}
 			
 		else
@@ -459,7 +507,7 @@ public function logout()
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 0)
     {
-        return View::make('level0');
+        return view('level0');
     }
     else
     {
@@ -474,7 +522,7 @@ public function logout()
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 1)
     {
-        return View::make('level1');
+        return view('level1');
     }
     else
     {

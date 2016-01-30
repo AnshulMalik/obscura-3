@@ -29,6 +29,7 @@ Route::get('/login','UsersController@login');
 Route::post('/postLogin','UsersController@postLogin');
 Route::get('/','UsersController@home');
 //Route::post('/test','HomeController@test');
+Route::post('/updateCollege','UsersController@updateCollege');
 Route::post('/postSignup','UsersController@postSignup');
 Route::post('/postfbgoogle','UsersController@postfbgoogle');
 Route::get('/fbgoogle','UsersController@fbgoogle');
@@ -42,6 +43,7 @@ Route::group(['middleware' => ['auth']], function () {
     //
 
     Route::get('/dashboard','UsersController@dashboard');
+   Route::get('/college','UsersController@college');   
 Route::post('/start','UsersController@start');
 Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');

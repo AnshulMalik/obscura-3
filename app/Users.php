@@ -42,6 +42,16 @@ class Users extends Model
 	{
 		return DB::table('users')->where('user_id',$userId)->pluck('first_name');
 	}
+	public static function getCollege($userId)
+	{
+		return DB::table('users')->where('user_id',$userId)->pluck('college');
+	}
+	public static function updateCollege($college,$userId)
+	{
+		return DB::table('users')
+            ->where('user_id', $userId)
+            ->update(['college' => $college]);
+	}
 	public static function getLevel($id)
 	{
 		return DB::table('users')->where('user_id',$id)->pluck('level');
@@ -62,7 +72,7 @@ class Users extends Model
 	}
 	public static function leaderboard()
 	{
-		return DB::select('SELECT first_name,level,last_name FROM users ORDER BY level DESC,answerTime LIMIT 0, 400');
+		return DB::select('SELECT first_name,level,last_name FROM users ORDER BY level DESC,answerTime LIMIT 0, 2000');
 	}
 
 

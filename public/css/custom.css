@@ -537,19 +537,31 @@ ul.table-of-contents {
 	margin-top: 11px;
 	cursor: pointer;
 }
-
-
+.credits-footer a{
+	font-size: 1.2rem;
+	right: 40px;
+	padding: 35px;
+	top: 0;
+	position: absolute;
+	color: #fff;
+	background-color: rgba(1,1,1,.15);
+}
+.credits-footer a:hover {
+	background-color: rgba(1,1,1,.22);
+}
 .levels-container {
-	padding-top: 90px;
+	padding-top: 55px;
+	min-height: 89.4%;
 }
 .level-number {
 	padding-top: 1px;
 }
 .level-content {
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-bottom: 30px;
 }
 .level-image {
+	max-width: 660px;
 	width: inherit;
 }
 .level-submit {
@@ -557,7 +569,23 @@ ul.table-of-contents {
 }
 .answer-box {
 	color: #fff;
+	margin-left: -50px!important;
 }
+.level-number h5 {
+		margin-left: 40px;
+}
+.special-level-input-box {
+	margin-left: 40px!important;
+	font-size: 1.64rem !important;
+	line-height: 110% !important;
+	border-bottom: none !important;
+	width: 100px !important;
+}
+.special-level-input-box:focus{
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
 @media screen and (min-width: 768px) {
 	.login {
 		max-width: 350px;
