@@ -31,7 +31,8 @@
                   <?php if(Session::has('message')): ?>
                     <?php echo e("<h5>"); ?>
 
-                { {Session::get('message')}}
+                  <?php echo e(Session::get('message')); ?>
+
                     <?php echo e("</h5>"); ?>
 
                 <?php endif; ?>

@@ -30,7 +30,7 @@
                   </div>
                   @if(Session::has('message'))
                     {{"<h5>"}}
-                { {Session::get('message')}}
+                  {{Session::get('message')}}
                     {{"</h5>"}}
                 @endif
                   <div class="col s3">

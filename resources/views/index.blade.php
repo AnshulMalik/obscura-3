@@ -10,7 +10,18 @@ use App\Users;
 
   <body id="home">
 
-    <?php include_once('nav.php'); ?>
+    <?php 
+    if(Auth::check())
+    {
+      include_once('nav_after_login.php');
+    }
+    else
+    {
+      include_once('nav.php');
+    } 
+
+
+    ?>
 
     <div class="container-fluid body">
       <div class="parallax-container full valign-wrapper">

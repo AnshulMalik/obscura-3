@@ -507,7 +507,7 @@ public function logout()
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 0)
     {
-        return view('level0');
+        return view('level26dup');
     }
     else
     {
