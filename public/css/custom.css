@@ -585,6 +585,18 @@ ul.table-of-contents {
 	border-bottom: none !important;
 	box-shadow: none !important;
 }
+.leaderboard {
+	color: #fff;
+}
+.leaderboard tr {
+	border-bottom: 1px solid;
+}
+.leaderboard-container {
+	padding-top: 60px;		
+}
+.leaderboard td{
+	padding: 8px 8px!important;	
+}
 
 @media screen and (min-width: 768px) {
 	.login {
@@ -610,5 +622,8 @@ ul.table-of-contents {
 	}
 	.ticker-div {
 		margin-top: -80px;
+	}
+	.logo-image {
+		margin-left: 7px;
 	}
 }

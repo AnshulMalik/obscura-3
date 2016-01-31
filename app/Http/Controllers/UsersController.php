@@ -37,7 +37,7 @@ class UsersController extends Controller {
 	*/
     public function check()
     {
-        return view('college');
+        return view('leaderboard');
     }
     public function college()
     {

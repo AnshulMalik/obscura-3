@@ -72,7 +72,7 @@ class Users extends Model
 	}
 	public static function leaderboard()
 	{
-		return DB::select('SELECT first_name,level,last_name FROM users ORDER BY level DESC,answerTime LIMIT 0, 2000');
+		return DB::select('SELECT first_name,level,college,last_name FROM users ORDER BY level DESC,answerTime LIMIT 0, 2000');
 	}
 
 
