@@ -13,9 +13,9 @@ class Levels extends Model
 		return DB::select('select level from levels where levelName=?',array($levelName));
 	}
 
-	public static function getLevelName($level)
+	public static function getLevelName($levelId)
 	{
-		return DB::select('select levelName from levels where level=?',array($level));
+		return DB::select('select levelName from levels where id=?',array($levelId));
 	}
 
 }

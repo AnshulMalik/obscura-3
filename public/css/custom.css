@@ -6,8 +6,16 @@
 	font-family: 'Exo', sans-serif;
 	font-weight: 300;
 }
-#logout {
+#logout, #levels {
 	top:64px !important;
+}
+#levels {
+	max-height: 312px !important;
+}
+.answer-message {
+	left: -25px;
+	top: 20px;
+	position: relative;
 }
 ol li {
 	text-align: left !important;
@@ -558,7 +566,6 @@ ul.table-of-contents {
 }
 .level-content {
 	margin-top: 10px;
-	margin-bottom: 30px;
 }
 .level-image {
 	max-width: 660px;

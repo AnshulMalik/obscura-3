@@ -9,8 +9,8 @@ class Answer extends Model
 
 
 
-	public static function getAnswer($level,$query)
+	public static function getAnswer($id,$answer)
 	{
-		return DB::table('answers')->where('level',$level)->pluck($query);
+		return DB::table('answers')->where('id',$id)->pluck($answer);
 	}
 }

@@ -52,6 +52,7 @@ Route::get('/level3','UsersController@level3');
 Route::get('/level4','UsersController@level4');
 Route::get('/level5','UsersController@level5');
 Route::get('/level6','UsersController@level6');
+Route::get('/level6_1','UsersController@level6_1');
 Route::get('/level7','UsersController@level7');
 Route::get('/level8','UsersController@level8');
 Route::get('/level9','UsersController@level9');
@@ -69,6 +70,18 @@ Route::get('/level19_1','UsersController@level19_1');
 Route::get('/level20','UsersController@level20');
 Route::get('/level21','UsersController@level21');
 Route::get('/level22','UsersController@level22');
+
+Route::get('/gsh','UsersController@gsh');
+Route::get('/dd1','UsersController@dd1');
+Route::get('/divfinal','UsersController@divfinal');
+Route::get('/dsa','UsersController@dsa');
+Route::get('/harry_cccsweg','UsersController@harry_cccsweg');
+Route::get('/hutfinal','UsersController@hutfinal');
+Route::get('/lovecgood','UsersController@lovecgood');
+Route::get('/wwwnewfinal1','UsersController@wwwnewfinal1');
+Route::get('/wall','UsersController@wall');
+
+
 Route::get('/level23','UsersController@level23');
 Route::get('/level24','UsersController@level24');
 Route::get('/level25','UsersController@level25');
@@ -80,7 +93,6 @@ Route::get('/level30','UsersController@level30');
 Route::get('/level31','UsersController@level31');
 Route::get('/level32','UsersController@level32');
 Route::get('/congo','UsersController@congo');
-Route::get('/level6th','UsersController@level6th');
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','UsersController@leaderboard');
 //Route::get('/home','UsersController@home');

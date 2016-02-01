@@ -1,5 +1,6 @@
 <?php
 use App\Users;
+$maxLevel = Users::getUserMaxLevel(Auth::id());
 ?>
 
 <div class="navbar-fixed">
@@ -11,6 +12,8 @@ use App\Users;
 		          		<li><a class="waves-effect waves-light" href="/dashboard">Home</a></li>
 						<li><a class="waves-effect waves-light" href="https://www.facebook.com/obscuranitkkr" target="_blank">Forum</a></li>
 						<li><a class="waves-effect waves-light" href="/leaderboard">Leaderboard</a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="levels">Levels<i class="material-icons right">arrow_drop_down</i></a></li>
+
 						<li><a class="dropdown-button" href="#!" data-activates="logout"><?php echo Users::getFirstName(Auth::id()); ?><i class="material-icons right">arrow_drop_down</i></a></li>
 
 
@@ -20,6 +23,17 @@ use App\Users;
 
 		        	 <ul id='logout' class='dropdown-content'>
 					  	<li><a href="/logout">Logout</a></li>
+					</ul>
+
+					<ul id='levels' class='dropdown-content'>
+					<?php
+						$i = 0;
+						for($i = 0;$i <=$maxLevel; $i++)
+						{
+							echo "<li><a href='/level".$i."''>Level"."$i"."</a></li>";
+						}
+					?>
+					  	
 					</ul>
 		        	<ul class="side-nav" id="mobile-demo">
 						<li><a href="/">Home</a></li>

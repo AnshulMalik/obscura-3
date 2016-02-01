@@ -1,6 +1,7 @@
 <?php
 namespace App;
 use DB;
+use Auth;
 use Illuminate\Database\Eloquent\Model;
 
 class Users extends Model
@@ -54,21 +55,21 @@ class Users extends Model
 	}
 	public static function getLevel($id)
 	{
-		return DB::table('users')->where('user_id',$id)->pluck('level');
+		return DB::table('users')->where('user_id',$id)->pluck('id');
 	}
-	public static function getUserMaxLevel($userId)
+	public static function getUserMaxId($userId)
 	{
-		return DB::table('users')->where('user_id',$userId)->pluck('level');
+		return DB::table('users')->where('user_id',$userId)->pluck('level_id');
 	}
 
-	public static function updateLevel($userMaxLevel)
+	public static function updateId($userMaxId)
 	{
 		DB::table('users')
             ->where('user_id', Auth::id())
             ->update(array('answerTime' => time()));
 		DB::table('users')
             ->where('user_id', Auth::id())
-            ->update(array('level' => $userMaxLevel+1));
+            ->update(array('level_id' => $userMaxId+1));
 	}
 	public static function leaderboard()
 	{
@@ -85,4 +86,34 @@ class Users extends Model
 		return DB::table('ticker')->where('id','1')->pluck('message');
 	}
 
+	public static function getLevelxUser($userId)
+	{
+		return DB::table('users')->where('user_id',$userId)->pluck('levelx');
+	}
+	public static function updateLevelx($userId,$levelx)
+	{
+		return DB::table('users')
+            ->where('user_id', $userId)
+            ->update(['levelx' => $levelx]);
+	}
+	public static function getHintSource($level)
+	{
+		return DB::table('hints')->where('level',$level)->pluck('hints');
+	}
+	public static function getMaxLevel($userMaxId)
+	{
+		return DB::table('levels')->where('id',$userMaxId)->pluck('level');
+
+	}
+	public static function getUserMaxLevel($userId)
+	{
+		return DB::table('users')->where('user_id',$userId)->pluck('level');
+
+	}
+	public static function updateUserLevel($userMaxLevel)
+	{
+		DB::table('users')
+            ->where('user_id', Auth::id())
+            ->update(array('level' => $userMaxLevel));
+	}
 }
