@@ -17,6 +17,14 @@
 	top: 20px;
 	position: relative;
 }
+.links {
+	position: relative;
+	top: -230px;
+	left: 60px;
+}
+.links a {
+	color: rgba(1, 1, 1, .8);
+}
 ol li {
 	text-align: left !important;
 }

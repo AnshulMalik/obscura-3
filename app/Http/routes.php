@@ -20,6 +20,7 @@ Route::get('/google_login','UsersController@google_redirect');
 Route::get('/account/google','UsersController@google');
 Route::get('/check','UsersController@check');
 
+Route::get('/credits', 'UsersController@credits');
 	
 Route::get('/obscura','UsersController@obscura');
 
@@ -39,13 +40,26 @@ Route::get('/profile', [
     'uses' => 'UsersController@show'
 ]);
 
+
+
+Route::get('/level8_lol123', 'UsersController@level8_lol123');
+Route::get('/level8_obsda', 'UsersController@level8_obsda');
+Route::get('/level8_delhi', 'UsersController@level8_delhi');
+Route::get('/level8_sup1_', 'UsersController@level8_sup1_');
+Route::get('/level8_alpha', 'UsersController@level8_alpha');
+Route::get('/level8_roger', 'UsersController@level8_roger');
+Route::get('/level8_hahaha', 'UsersController@level8_hahaha');
+Route::get('/level8_stairs', 'UsersController@level8_stairs');
+Route::get('/level8_zozozo', 'UsersController@level8_zozozo');
+
+
 Route::group(['middleware' => ['auth']], function () {
     //
 
     Route::get('/dashboard','UsersController@dashboard');
    Route::get('/college','UsersController@college');   
-Route::post('/start','UsersController@start');
-Route::get('/level0','UsersController@level0');
+//Route::post('/start','UsersController@start');
+/*Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');
 Route::get('/level2','UsersController@level2');
 Route::get('/level3','UsersController@level3');
@@ -92,7 +106,7 @@ Route::get('/level29','UsersController@level29');
 Route::get('/level30','UsersController@level30');
 Route::get('/level31','UsersController@level31');
 Route::get('/level32','UsersController@level32');
-Route::get('/congo','UsersController@congo');
+Route::get('/congo','UsersController@congo');*/
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','UsersController@leaderboard');
 //Route::get('/home','UsersController@home');

@@ -18,6 +18,12 @@
               <div class="level-content col s12">
                 <div class="level-image-container">
                   <img class="level-image" src="images.jpg" />
+
+                  <div class="links">
+                    <a href="/1.mp3" target="_blank"> One </a>
+                    <a href="/2.mp3" target="_blank"> Two </a>
+                    <a href="/3.mp3" target="_blank"> Three </a>
+                  </div>
                 </div>
               </div> 
 
