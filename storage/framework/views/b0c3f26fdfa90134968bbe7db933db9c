@@ -50,7 +50,11 @@
         <div class="parallax">
           <img src="images/banner.jpg" style="display: block; transform: translate3d(-50%, 316px, 0px);"></img>
           <map name="Map" id="Map">
-            <area alt="" title="" href="#" shape="poly" coords="56,90,58,125,85,128,87,90,73,85" />
+          <?php 
+          $id = Auth::id();
+            echo "<area href='/level9?id="."$id'"."shape='poly' coords='56,90,58,125,85,128,87,90,73,85' />";
+          ?>
+            <area href="/level9" shape="poly" coords="56,90,58,125,85,128,87,90,73,85" />
             
         </map>
         </div>

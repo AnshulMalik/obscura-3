@@ -687,12 +687,12 @@ public function level6_1()
  }
 
  public function level8_delhi() {
-    return view('level8_delhi'); 
+     
     $userMaxId = Users::getUserMaxId(Auth::id());
     $userMaxLevelName = Levels::getLevelName($userMaxId);
     if($userMaxId >= 10)
     {
-        return view('level8');
+        return view('level8_delhi');
     }
     else
     {
@@ -784,6 +784,19 @@ public function level6_1()
  
  public function level9()
  {
+    $userMaxId = Users::getUserMaxId(Auth::id());
+    $Id = Input::get('id');
+    if($Id == Auth::id())
+    {
+        if($userMaxId == 10)
+        {
+        Users::updateId($userMaxId);
+        $userMaxId = Users::getUserMaxId(Auth::id());
+        $userMaxLevel = Users::getMaxLevel($userMaxId);
+        Users::updateUserLevel($userMaxLevel);
+        }
+        
+    }
     $userMaxId = Users::getUserMaxId(Auth::id());
     $userMaxLevelName = Levels::getLevelName($userMaxId);
     if($userMaxId >= 11)

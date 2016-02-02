@@ -42,6 +42,26 @@ Route::get('/profile', [
 
 
 
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+    //
+
+    Route::get('/dashboard','UsersController@dashboard');
+   Route::get('/college','UsersController@college');   
+/*Route::post('/start','UsersController@start');
+Route::get('/level0','UsersController@level0');
+Route::get('/level1','UsersController@level1');
+Route::get('/level2','UsersController@level2');
+Route::get('/level3','UsersController@level3');
+Route::get('/level4','UsersController@level4');
+Route::get('/level5','UsersController@level5');
+Route::get('/level6','UsersController@level6');
+Route::get('/level6_1','UsersController@level6_1');
+Route::get('/level7','UsersController@level7');
+Route::get('/level8','UsersController@level8');
+
 Route::get('/level8_lol123', 'UsersController@level8_lol123');
 Route::get('/level8_obsda', 'UsersController@level8_obsda');
 Route::get('/level8_delhi', 'UsersController@level8_delhi');
@@ -52,23 +72,6 @@ Route::get('/level8_hahaha', 'UsersController@level8_hahaha');
 Route::get('/level8_stairs', 'UsersController@level8_stairs');
 Route::get('/level8_zozozo', 'UsersController@level8_zozozo');
 
-
-Route::group(['middleware' => ['auth']], function () {
-    //
-
-    Route::get('/dashboard','UsersController@dashboard');
-   Route::get('/college','UsersController@college');   
-//Route::post('/start','UsersController@start');
-/*Route::get('/level0','UsersController@level0');
-Route::get('/level1','UsersController@level1');
-Route::get('/level2','UsersController@level2');
-Route::get('/level3','UsersController@level3');
-Route::get('/level4','UsersController@level4');
-Route::get('/level5','UsersController@level5');
-Route::get('/level6','UsersController@level6');
-Route::get('/level6_1','UsersController@level6_1');
-Route::get('/level7','UsersController@level7');
-Route::get('/level8','UsersController@level8');
 Route::get('/level9','UsersController@level9');
 Route::get('/level10','UsersController@level10');
 Route::get('/level11','UsersController@level11');
@@ -109,7 +112,7 @@ Route::get('/level32','UsersController@level32');
 Route::get('/congo','UsersController@congo');*/
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','UsersController@leaderboard');
-//Route::get('/home','UsersController@home');
+Route::get('/home','UsersController@home');
 
 Route::post('/checkAnswer','UsersController@checkAnswer');
 });

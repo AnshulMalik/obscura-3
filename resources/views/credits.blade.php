@@ -4528,8 +4528,8 @@ use App\Users;
                             </div>
                             <div class="col m3 s6">
                                 <!-- normal -->
-                                <div class="ih-item circle effect3 left_to_right">
-                                    <a href="#">
+                                <div class="ih-item circle effect3 left_to_right" >
+                                    <a href="https://www.facebook.com/utkarsh578" target="_blank">
                                         <div class="img"><img src="images/utkarsh.jpg" alt="img"></div>
                                         <div class="info">
                                             <h3>Utkarsh Kumar</h3>
