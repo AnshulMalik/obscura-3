@@ -13,10 +13,3 @@ tl.from("path",3,{drawSVG:"0%"})
   }, 1500);
 
 
-$(document).ready(function() {
-        $('#level-label').on('keyup', function(e) {
-          var input = $(this)[0].value.toLowerCase();
-          if(input == "may 4" || input == "04/05/2016" || input == "4/5/2016" || input == "4-5-2016" || input == "04-05-2016" || input == "may4")
-            alert("yank me allayafi jin monkey kijinosi mango tree");
-        });
-      });
