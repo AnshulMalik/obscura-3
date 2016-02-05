@@ -50,7 +50,7 @@ Route::group(['middleware' => ['auth']], function () {
 
  Route::get('/dashboard','UsersController@dashboard');
 Route::get('/college','UsersController@college');   
-/*Route::get('/start','UsersController@start');
+Route::get('/start','UsersController@start');
 Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');
 Route::get('/level2','UsersController@level2');
@@ -111,7 +111,7 @@ Route::get('/level29','UsersController@level29');
 Route::get('/level30','UsersController@level30');
 Route::get('/level31','UsersController@level31');
 Route::get('/level32','UsersController@level32');
-Route::get('/congo','UsersController@congo');*/
+Route::get('/congo','UsersController@congo');
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','UsersController@leaderboard');
 //Route::get('/home','UsersController@home');

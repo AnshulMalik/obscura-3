@@ -340,9 +340,7 @@
 
     <?php include_once('footer.php');?>
     <script src="js/index.js"></script>
-    <?php
-    echo "<!--".Users::getHintSource(2455)."-->";
-    ?>
+   <!-- sherlock.Peek Not Good -->
   </body>
 </html>
 

@@ -7,6 +7,7 @@ use App\Users;
     include_once('header.php');
 
   ?>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
 
   <body id="home">
 
@@ -41,9 +42,13 @@ use App\Users;
                       </div>
                   </div>
 
+                  
+
 
               </div>
-
+              <div class="row">
+                  <h5 style="font-family: 'Titillium Web', sans-serif;color: white;">GAME IS LIVE</h5>
+                  </div>
             </div>
           </div>
           <div class="ticker-div">

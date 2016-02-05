@@ -3,6 +3,11 @@
     include_once('header.php');
     use App\Users;
   ?>
+  <style>
+  #Map {
+    cursor: default;
+  }
+  </style>
 
   <body id="home">
 

@@ -3,7 +3,6 @@
     include_once('header.php');
     use App\Users;
   ?>
-
   <body id="home">
 
   <?php include_once('nav_after_login.php'); ?>

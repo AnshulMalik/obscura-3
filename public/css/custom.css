@@ -578,6 +578,9 @@ ul.table-of-contents {
 .level-content {
 	margin-top: 10px;
 }
+#Map {
+    cursor: default;
+  }
 .level-image {
 	max-width: 660px;
 	width: inherit;

@@ -92,14 +92,14 @@
 
 
                </h1>
-              <h5 class="white-text tagline">The game will begin soon..</h5>
+              <h5 class="white-text tagline">The game is Live</h5>
               <div class="row">
 
 
 
                   <div class="col m6 offset-m3 s8 offset-s2">
                       <div class="input-field col s8 offset-s2">
-                        <a href="/start"><button class="btn-big btn-alt waves-effect waves-teal signupBtn">Start</h3></a>
+                        <a href="/start" class="btn-big btn-alt waves-effect waves-teal signupBtn">Start</a>
                       </div>
                   </div>
 
