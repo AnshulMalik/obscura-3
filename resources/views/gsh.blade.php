@@ -69,7 +69,7 @@
     });
 
     $(document).ready(function() {
-      window.open(window.location.host +"/popup.html", '_blank');
+      window.open("/popup.html", '_blank');
     });
     </script>
   </body>
