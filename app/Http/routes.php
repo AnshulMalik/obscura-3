@@ -49,8 +49,8 @@ Route::group(['middleware' => ['auth']], function () {
     //
 
  Route::get('/dashboard','UsersController@dashboard');
-/*Route::get('/college','UsersController@college');   
-Route::get('/start','UsersController@start');
+Route::get('/college','UsersController@college');   
+/*Route::get('/start','UsersController@start');
 Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');
 Route::get('/level2','UsersController@level2');
