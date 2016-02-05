@@ -42,7 +42,7 @@ use App\Users;
                       </div>
                   </div>
 
-                  
+
 
 
               </div>
@@ -125,6 +125,8 @@ Happy hunting!!.</h6>
                   <li>We are cruel people hints can be ANYWHERE.</li>
                   <li>Begin to love surfing. Oh, did we forget to tell  we love Wikipedia and tineye.com a lot?</li>
                   <li>Finding the answer is not the final solution.</li>
+                  <li>There is no space in between the answers</li>
+                  <li>Use Windows to play the GAME</li>
                 </ol>
 
               </div>
