@@ -61,18 +61,7 @@
     ?>
   </body>
 
-  <!-- 
-  What comes once in fig but never in twig, 
-  Second is never in shop but once in ship.
-  The third one can makes melittologist wet,
-  While the fourth's not, but never in net.
-  The fifth is annual, but not in a week,
-  The sixth is the first of all you seek. 
-  The seventh ate eighth and made it the same,
-  It peeks once in a corner but not at a lane.
-  The last is possessive, throwing weight around,
-  Gets mixed in a wind, and gone when its wound. 
-  -->
+ 
 </html>
 
 <html>
