@@ -122,7 +122,6 @@ var img = $('.icon-offline');
         }
       });
 
-
       $(document).ready(function() {
         $('#level-label').on('keyup', function(e) {
           var input = $(this)[0].value.toLowerCase();

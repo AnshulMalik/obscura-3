@@ -12,4 +12,3 @@ tl.from("path",3,{drawSVG:"0%"})
 
   }, 1500);
 
-
