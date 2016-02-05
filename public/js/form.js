@@ -39,6 +39,7 @@
 	});
 }(document, window, jQuery));
 */
+
 $(document).on('ready', function() {
 	var isSignupVisible = false;
 	var isLoginVisible = false;
@@ -86,3 +87,37 @@ $(document).on('ready', function() {
 		}
 	};
 });
+
+var img = $('.icon-offline');
+      var right = function() {
+        img.animate({left: '+=5'}, 1);
+      }
+      var left = function() {
+        img.animate({left: '-=5'}, 1);
+      }
+      var up = function() {
+        img.animate({top: '-=5'}, 1);
+      }
+      var down = function() {
+        img.animate({top: '+=5'}, 1);
+      }
+
+      $(document).on('keydown', function(e) {
+        switch(e.keyCode) {
+          case 37 :
+            left();
+            break;
+          case 38:
+            up();
+            break;
+          case 39 :
+            right();
+            break;
+          case 40:
+            down();
+            break;
+        }
+        if(img.position().left > window.innerWidth * .90) {
+          window.location = "/level18?key=69";
+        }
+      });

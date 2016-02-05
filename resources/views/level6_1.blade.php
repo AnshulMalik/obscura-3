@@ -58,7 +58,7 @@
     <?php include_once('footer.php');?>
     <script src="js/index.js"></script>
     <?php
-    echo "<!--".Users::getHintSource(6)."-->";
+    echo "<!--".Users::getHintSource(6555)."-->";
     ?>
   </body>
 </html>

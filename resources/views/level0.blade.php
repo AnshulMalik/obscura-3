@@ -60,6 +60,12 @@
     echo "<!--".Users::getHintSource(0)."-->";
 
     ?>
+    <script>
+    document.onkeydown = function(e) {
+      if(e.keyCode == 36)
+        window.location.pathname = '/level1';
+    }
+    </script>
   </body>
 </html>
 

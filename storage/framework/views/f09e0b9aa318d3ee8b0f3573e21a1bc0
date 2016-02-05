@@ -34,7 +34,7 @@
 
                   <div class="col s6 offset-s2 input-field">
                     <input type="text" class="validate answer-box" id="answer" placeholder="Answer" name="answer">
-                    <input type="hidden" value="10" name="presentId">
+                    <input type="hidden" value="" name="presentId">
                   </div>
                   
                   <div class="col s3">

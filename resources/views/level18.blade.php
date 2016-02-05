@@ -1,0 +1,79 @@
+<html>
+  <?php
+    include_once('header.php');
+    use App\Users;
+  ?>
+
+  <body id="home">
+
+  <?php include_once('nav_after_login.php'); ?>
+
+
+    <div class="container-fluid body">
+      <div class="parallax-container levels-container valign-wrapper">
+        <div class="section">
+          <div class="container">
+            <div class="row center">
+              <div class="col s12 level-number white-text left-align offset-s1"><h5>Level 18</h5></div>
+              <div class="level-content col s12">
+                <div class="level-image-container">
+                  <img class="level-image" src="watchdogs.jpg" />
+                </div>
+              </div> 
+
+               <form method="post" action="/checkAnswer"> 
+                @if(Session::has('message'))
+                <div class="row answer-message " >
+                  <div class="left-align col s10 offset-s2 white-text">
+                      {{Session::get('message')}}
+                  </div>
+                </div>
+                @endif
+                <div class="row">
+
+                  <div class="col s6 offset-s2 input-field">
+                    <input type="text" class="validate answer-box" id="answer" placeholder="Answer" name="answer">
+                    <input type="hidden" value="20" name="presentId">
+                  </div>
+                  
+                  <div class="col s3">
+                    <input type="submit" class="btn level-submit" value="Submit" />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+           
+        </div>
+        <div class="parallax">
+          <img src="images/banner.jpg" style="display: block; transform: translate3d(-50%, 316px, 0px);"></img>
+        </div>
+      </div>
+
+
+    </div>
+
+    <?php include_once('footer.php');?>
+    <script src="js/index.js"></script>
+    <?php
+    echo "<!--".Users::getHintSource(18)."-->";
+    ?>
+  </body>
+
+  <!-- 
+  What comes once in fig but never in twig, 
+  Second is never in shop but once in ship.
+  The third one can makes melittologist wet,
+  While the fourth's not, but never in net.
+  The fifth is annual, but not in a week,
+  The sixth is the first of all you seek. 
+  The seventh ate eighth and made it the same,
+  It peeks once in a corner but not at a lane.
+  The last is possessive, throwing weight around,
+  Gets mixed in a wind, and gone when its wound. 
+  -->
+</html>
+
+<html>
+  

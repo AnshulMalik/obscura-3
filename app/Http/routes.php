@@ -18,7 +18,7 @@ Route::get('/account/facebook','UsersController@facebook');
 
 Route::get('/google_login','UsersController@google_redirect');
 Route::get('/account/google','UsersController@google');
-Route::get('/check','UsersController@check');
+//Route::get('/check','UsersController@check');
 
 Route::get('/credits', 'UsersController@credits');
 	
@@ -48,9 +48,9 @@ Route::get('/profile', [
 Route::group(['middleware' => ['auth']], function () {
     //
 
-    Route::get('/dashboard','UsersController@dashboard');
-   Route::get('/college','UsersController@college');   
-/*Route::post('/start','UsersController@start');
+ Route::get('/dashboard','UsersController@dashboard');
+/*Route::get('/college','UsersController@college');   
+Route::get('/start','UsersController@start');
 Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');
 Route::get('/level2','UsersController@level2');
@@ -83,10 +83,11 @@ Route::get('/level16','UsersController@level16');
 Route::get('/level17','UsersController@level17');
 Route::get('/level18','UsersController@level18');
 Route::get('/level19','UsersController@level19');
-Route::get('/level19_1','UsersController@level19_1');
 Route::get('/level20','UsersController@level20');
 Route::get('/level21','UsersController@level21');
+Route::get('/level21_1','UsersController@level21_1');
 Route::get('/level22','UsersController@level22');
+Route::get('/level22_1','UsersController@level22_1');
 
 Route::get('/gsh','UsersController@gsh');
 Route::get('/dd1','UsersController@dd1');
@@ -101,6 +102,7 @@ Route::get('/wall','UsersController@wall');
 
 Route::get('/level23','UsersController@level23');
 Route::get('/level24','UsersController@level24');
+Route::get('/level24_1','UsersController@level24_1');
 Route::get('/level25','UsersController@level25');
 Route::get('/level26','UsersController@level26');
 Route::get('/level27','UsersController@level27');
@@ -112,7 +114,7 @@ Route::get('/level32','UsersController@level32');
 Route::get('/congo','UsersController@congo');*/
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','UsersController@leaderboard');
-Route::get('/home','UsersController@home');
+//Route::get('/home','UsersController@home');
 
 Route::post('/checkAnswer','UsersController@checkAnswer');
 });

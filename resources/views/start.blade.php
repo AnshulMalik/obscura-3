@@ -99,7 +99,7 @@
 
                   <div class="col m6 offset-m3 s8 offset-s2">
                       <div class="input-field col s8 offset-s2">
-                        <button class="btn-big btn-alt waves-effect waves-teal signupBtn">Start</h3>
+                        <a href="/start"><button class="btn-big btn-alt waves-effect waves-teal signupBtn">Start</h3></a>
                       </div>
                   </div>
 

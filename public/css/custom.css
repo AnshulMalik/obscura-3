@@ -9,12 +9,15 @@
 #logout, #levels {
 	top:64px !important;
 }
+#Map {
+	cursor: auto;
+}
 #levels {
 	max-height: 312px !important;
 }
 .answer-message {
-	left: -25px;
-	top: 20px;
+	left: -35px;
+	top: 10px;
 	position: relative;
 }
 .links {
@@ -594,7 +597,7 @@ ul.table-of-contents {
 	font-size: 1.64rem !important;
 	line-height: 110% !important;
 	border-bottom: none !important;
-	width: 100px !important;
+	width: 150px !important;
 }
 .special-level-input-box:focus{
 	border-bottom: none !important;

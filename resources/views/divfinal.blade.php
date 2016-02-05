@@ -14,25 +14,28 @@
         <div class="section">
           <div class="container">
             <div class="row center">
-              <div class="col s12 level-number white-text left-align offset-s1"><h5>Level 25</h5></div>
+              <div class="col s12 level-number white-text left-align offset-s1"><h5>Level 22</h5></div>
               <div class="level-content col s12">
                 <div class="level-image-container">
                   <img class="level-image" src="/levelx/divfinal.jpg" usemap="#Map" />
                 </div>
               </div> 
 
-               <form method="post" action="/checkAnswer"> 
+              <form method="post" action="/checkAnswer"> 
+                @if(Session::has('message'))
+                <div class="answer-message " >
+                  <div class="left-align col s10 offset-s2 white-text">
+                      {{Session::get('message')}}
+                  </div>
+                </div>
+                @endif
                 <div class="row">
 
                   <div class="col s6 offset-s2 input-field">
-                    <input type="text" class="validate answer-box" id="answer" placeholder="Answer" name="answer">
-                    <input type="hidden" value="12" name="presentLevel">
+                    <input type="text" class="validate answer-box" id="answer" placeholder="Answer" name="anaccccswer">
+                    <input type="hidden" value="22" name="presentLevel">
                   </div>
-                  @if(Session::has('message'))
-                    {{"<h5>"}}
-                  {{Session::get('message')}}
-                    {{"</h5>"}}
-                @endif
+                  
                   <div class="col s3">
                     <input type="submit" class="btn level-submit" value="Submit" />
                   </div>
@@ -66,6 +69,9 @@
     $('#Map').on('click', function(e) {
       e.preventDefault();
       document.location.pathname = "wall";
+    });
+    $(document).ready(function() {
+      alert('is');
     });
     </script>
   </body>

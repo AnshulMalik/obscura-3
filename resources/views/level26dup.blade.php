@@ -6,35 +6,7 @@
 
   <body id="home">
 
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo"><img src="/images/logo.jpg" class="logo-image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obscura</a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                  <li><a class="waves-effect waves-light" href="#home">Home</a></li>
-            <li><a class="waves-effect waves-light" href="#">Forum</a></li>
-            <li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
-            <li><a class="dropdown-button" href="#" data-activates="logout">{{Users::getFirstName(Auth::id())}}<i class="material-icons right">arrow_drop_down</i></a></li>
-
-
-
-
-              </ul>
-
-               <ul id='logout' class='dropdown-content'>
-              <li><a href="/logout">Logout</a></li>
-          </ul>
-              <ul class="side-nav" id="mobile-demo">
-            <li><a href="#home">Home</a></li>
-            <li><a class="waves-effect waves-light" href="#">Forum</a></li>
-            <li><a class="waves-effect waves-light" href="#">Leaderboard</a></li>
-            <li><a class="waves-effect waves-light" href="#!">Logout</a></li>
-
-              </ul>
-            </div>
-        </nav>
-    </div>
+     <?php include_once('nav_after_login.php'); ?>
 
 
     <div class="container-fluid body">
@@ -42,18 +14,28 @@
         <div class="section">
           <div class="container">
             <div class="row center">
-              <div class="col s12 level-number white-text left-align offset-s1"><input type="text" class="special-level-input-box" value="Level 25" /></div>
+            <form method="post" action="/checkAnswer">
+              <div class="col s12 level-number white-text left-align offset-s1"><input type="text" class="special-level-input-box" value="Level 5" name="answer"/></div>
               <div class="level-content col s12">
                 <div class="level-image-container">
-                  <img class="level-image" src="http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg" />
+                  <img class="level-image" src="5chirantanchod.jpg" />
                 </div>
               </div> 
 
-              <form>
+               
+              @if(Session::has('message'))
+                <div class="row answer-message " >
+                  <div class="left-align col s10 offset-s2 white-text">
+                      {{Session::get('message')}}
+                  </div>
+                </div>
+                @endif
                 <div class="row">
 
                   <div class="col s6 offset-s2 input-field">
-                    <input type="text" class="validate answer-box" id="answer" placeholder="Answer">
+                    <input type="text" class="validate answer-box" id="answer" placeholder="Answer" name ="answer1">
+                    <input type="hidden" value="6" name="presentId">
+
                   </div>
                   <div class="col s3">
                     <input type="button" class="btn level-submit" value="Submit" />
