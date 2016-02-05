@@ -38,7 +38,7 @@ $maxLevel = Users::getUserMaxLevel(Auth::id());
 		        	<ul class="side-nav" id="mobile-demo">
 						<li><a href="/">Home</a></li>
 						<li><a href="https://www.facebook.com/obscuranitkkr" target="_blank">Forum</a></li>
-						<li><a href="#">Leaderboard</a></li>
+						<li><a href="/leaderboard">Leaderboard</a></li>
 						<li><a href="/logout">Logout</a></li>
 
 			      	</ul>
