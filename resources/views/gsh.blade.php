@@ -66,7 +66,8 @@
     
 
     $(document).ready(function() {
-      window.open("/popup.html", '_blank');
+      //window.open("/popup.html", '_blank');
+      alert("Come all ye mortals, but the maze is not for the gullible; Step light and true, because the pitfalls are terrible. One erroneous tread and you shall not be remitted; Because here nothing is true, and everything is permitted. Ahoy matey! Step aboard, we are about to set sail, Sit tight and brace yourselves for this stormy tale. His judgement made him see the light, as he said, Once a friend then a foe, they justly felt betrayed. A shrewd master, a prophet directed by the ones before, The realms of Ottoman he roamed, looking for more. One belonged to a family where infidelity ran true, The New World he fought for, deep inside revenge did brew. Et voici this master, his motivations might seem vague, The lack of parentage an illusion that did do plague. The legion, the one true master who fell from grace, Didn't stop him from revolutionising the entire race. A flamboyant outlaw that he was, he raised a storm, He dissed the politics, ne'er shied to break a bone, or norm. It is said two are better than one, they took it to heart, He was a brute of a force and well, she was just smart. So this is how the story goes and this is how it will stay, You might think them one, but you're neither correct nor astray. They hunt in the dark to serve the common some light, Solve me and find your answers, or struggle in the night.");
     });
     </script>
   </body>
