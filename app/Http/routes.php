@@ -117,4 +117,8 @@ Route::get('/leaderboard','UsersController@leaderboard');
 //Route::get('/home','UsersController@home');
 
 Route::post('/checkAnswer','UsersController@checkAnswer');
+
+
+Route::get('/feedback','UsersController@feedback');
+Route::post('/postFeedback','UsersController@postFeedback');
 });

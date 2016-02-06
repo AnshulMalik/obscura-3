@@ -35,9 +35,21 @@ class UsersController extends Controller {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
+    public function feedback()
+    {
+        $userId = Auth::id();
+        $getFeedback = Users::getFeedback($userId);
+        return view('feedback')->with('getFeedback',$getFeedback);
+    }
+    public function postFeedback()
+    {
+        $feedback = Input::get('feedback');
+        Users::updateFeedback($feedback);
+
+    }
     public function check()
     {
-        return view('test');
+        return view('feedback');
     }
     public function credits()
     {

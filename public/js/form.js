@@ -128,6 +128,10 @@ var img = $('.icon-offline');
           if(input == "may 4" || input == "04/05/2016" || input == "4/5/2016" || input == "4-5-2016" || input == "04-05-2016" || input == "may4")
             alert("yank me allayafi jin monkey kijinosi mango tree");
         });
+
+        if(window.location.pathname == "/level30") {
+        	window.open('okmnjiuhb.gif', '_blank');
+        }
       });
 
 

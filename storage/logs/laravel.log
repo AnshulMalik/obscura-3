@@ -10877,3 +10877,6 @@ Stack trace:
 #52 /home/utkarsh/projects/obscura_2016/obscura1/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #53 /home/utkarsh/projects/obscura_2016/obscura1/server.php(21): require_once('/home/utkarsh/p...')
 #54 {main}  
+[2016-02-06 06:58:01] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\View' not found' in /home/utkarsh/projects/obscura_2016/obscura1/app/Http/Controllers/UsersController.php:1339
+Stack trace:
+#0 {main}  

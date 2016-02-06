@@ -116,4 +116,8 @@ class Users extends Model
             ->where('user_id', Auth::id())
             ->update(array('level' => $userMaxLevel));
 	}
+	public static function getFeedback($userId)
+	{
+		return DB::table('users')->where('user_id',$userId)->pluck('feedback');
+	}
 }

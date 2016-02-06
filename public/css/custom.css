@@ -572,6 +572,11 @@ ul.table-of-contents {
 	padding-top: 55px;
 	min-height: 89.4%;
 }
+.level-4-container {
+	padding-top: 55px;
+	min-height: 89.4%;
+	height: 60%;
+}
 .level-number {
 	padding-top: 1px;
 }
