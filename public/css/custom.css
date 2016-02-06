@@ -580,7 +580,10 @@ ul.table-of-contents {
 }
 #Map {
     cursor: default;
-  }
+}
+area {
+    cursor: default;
+}
 .level-image {
 	max-width: 660px;
 	width: inherit;
