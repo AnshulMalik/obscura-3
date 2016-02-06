@@ -6,6 +6,12 @@
 	font-family: 'Exo', sans-serif;
 	font-weight: 300;
 }
+object {
+	cursor: pointer;
+}
+object:hover {
+	cursor: pointer;
+}
 #logout, #levels {
 	top:64px !important;
 }
@@ -546,6 +552,10 @@ ul.table-of-contents {
 	margin-top: 25px;
 	display: inline-block;
 }
+.gawds {
+	margin-top: 20px;
+	display: inline-block;
+}
 .footer-text {
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -559,7 +569,7 @@ ul.table-of-contents {
 .credits-footer a{
 	font-size: 1.2rem;
 	right: 40px;
-	padding: 35px;
+	padding: 39px;
 	top: 0;
 	position: absolute;
 	color: #fff;

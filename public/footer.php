@@ -1,14 +1,20 @@
 		<div class="footer">
 			<div class="subscribe-container valign-wrapper">
 				<div class="row valign">
-					<div class="col s12">
+					<div class="col s9">
 						<p class="inline footer-text">For further details ping us on <span class="white-text">info@obscuraconflu.com </span> or &nbsp; </p><a href="https://www.facebook.com/obscuranitkkr" target="_blank"><img class="small-image" src="images/fb-icon.png"></a>
 						<br>
 						<p class="" style="text-align: center"><a href="http://conflu.org" target="_blank">conflu.org</a></p>	
+						
 					</div>
 					
+						<p class="footer-text gawds">In association with</p>
+						 <div class="col s3"><a href="http://gawds.in" target="_blank"><img src="/gawds.svg" type="image/svg+xml" class="Link" id="GAWDSLink" width="90px" height="44px" style="margin-left: 12px; padding-bottom: 10px; z-index: -1"></img></a></div>
+					</div>
+
 						<p class="credits-footer" style="text-align: center"><a href="/credits" target="_blank">Credits</a></p>	
-					
+
+
 				</div>
 				
 
