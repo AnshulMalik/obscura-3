@@ -340,7 +340,7 @@
 
     <?php include_once('footer.php');?>
     <script src="js/index.js"></script>
-   <!-- sherlock.Peek Not Good -->
+   <!-- jagex.jpg -->
   </body>
 </html>
 
