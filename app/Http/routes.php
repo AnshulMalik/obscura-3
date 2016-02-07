@@ -18,7 +18,7 @@ Route::get('/account/facebook','UsersController@facebook');
 
 Route::get('/google_login','UsersController@google_redirect');
 Route::get('/account/google','UsersController@google');
-//Route::get('/check','UsersController@check');
+Route::get('/check','UsersController@check');
 
 Route::get('/credits', 'UsersController@credits');
 	
@@ -109,7 +109,7 @@ Route::get('/level27','UsersController@level27');
 Route::get('/level28','UsersController@level28');
 Route::get('/level29','UsersController@level29');
 Route::get('/level30','UsersController@level30');
-Route::get('/level31','UsersController@level31');
+Route::get('/shiftone','UsersController@shiftone');
 Route::get('/level32','UsersController@level32');
 Route::get('/congo','UsersController@congo');
 Route::get('/logout','UsersController@logout');

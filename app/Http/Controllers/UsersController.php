@@ -1330,43 +1330,31 @@ public function level22_1()
         return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     } 
  }
- public function level31()
+ public function shiftone()
  {
-    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    $presentLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= 31)
+    $userMaxId = Users::getUserMaxId(Auth::id());
+    $userMaxLevelName = Levels::getLevelName($userMaxId);
+    if($userMaxId >= 36)
     {
-        return View::make('level31');
+        return view('shiftone');
     }
     else
     {
-        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     } 
  }
-  public function level32()
- {
-    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    $presentLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= 32)
-    {
-        return View::make('level32');
-    }
-    else
-    {
-        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
-    } 
- }
+
 public function congo()
  {
-    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    $presentLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= 33)
+    $userMaxId = Users::getUserMaxId(Auth::id());
+    $userMaxLevelName = Levels::getLevelName($userMaxId);
+    if($userMaxId >= 37)
     {
-        return View::make('congo');
+        return view('congo');
     }
     else
     {
-        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     } 
  }
 }

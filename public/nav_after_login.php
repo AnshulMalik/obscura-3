@@ -30,7 +30,16 @@ $maxLevel = Users::getUserMaxLevel(Auth::id());
 						$i = 0;
 						for($i = 0;$i <=$maxLevel; $i++)
 						{
-							echo "<li><a href='/level".$i."''>Level"."$i"."</a></li>";
+							if($i == 31)
+							{
+								echo "<li><a href='/shiftone'>Level"."$i"."</a></li>";
+							}
+							else if($i==32)
+							{
+								echo "<li><a href='/congo'>Level"."$i"."</a></li>";
+							}
+							else
+							 echo "<li><a href='/level".$i."''>Level"."$i"."</a></li>";
 						}
 					?>
 					  	
