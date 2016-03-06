@@ -1,4 +1,4 @@
 # Obscura 
-## It is an online crypthunt organized by NIT Kurukshetra
+### It is an online crypthunt organized by NIT Kurukshetra
 
-### This repository code of the same 
+#### This repository contains code of the same 
